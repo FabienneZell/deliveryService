@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lieferdienst</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <div class="page">
+        <div class="header">
+            <nav class="navBar">
+                <div class="nav-left">
+                    <a href="#" class="nav-a"><img src="icons/arrow.png" id="arrow-left"></a>
+                    <a href="#" class="nav-a"><img id="logo" src="icons/logo.png"><b>Lieferdienst</b>.de</a>
+                </div>
+                <div class="nav-middle">
+                    <a href="#" class="nav-a"><input id="adress-input"></a>
+                </div>
+                <div class="nav-right">
+                    <a href="#" class="nav-a"><img>GER</a>
+                    
+                    <img src="icons/burgerMenu.png" id="menu" onclick="showMenu()"></a>
+                    <div class="overlay-menu" id="overlay-menu">
+                        <a href="#" class="burger-a">Bestellungen</a>
+                        <a href="#" class="burger-a">Favoriten</a>
+                        <a href="#" class="burger-a">Punkte</a>
+                        <a href="#" class="burger-a">Stempelkarten</a>
+                        <a href="#" class="burger-a">Brauchst du Hilfe?</a>
+                        <button onclick="closeMenu()" class="close-button">X</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="all">
+            <section>
+                <div class="left-side">
+                    <div class="restaurant-header">
+                        <div class="meal-img">
+                            <img src="img/pizza.jpg" id="meal-img">
+                        </div>
+                        <!-- <div class="logo-restaurant">
+                            <img src="img/basil.jpg" id="logo-restaurant">
+                        </div> -->
+
+
+                        <div class="name-and-buttons">
+                            <h2 id="restaurant-name">XY Restaurant</h2>
+                            <img id="info-img" src="icons/info.png" class="info-heart">
+                            <img id="heart-img" src="icons/heart.png" class="info-heart">
+                        </div>
+                        <div class="evaluation">
+                            <img src="icons/star_orange.png" id="star-orange-img">
+                            <img src="icons/star_orange.png" id="star-orange-img">
+                            <img src="icons/star_orange.png" id="star-orange-img">
+                            <img src="icons/star_orange.png" id="star-orange-img">
+                            <img src="icons/star_grey.png" id="star-grey-img">
+                            <p>Bewertungen</p>
+                        </div>
+
+
+                        <div class="restaurant">
+                            <div class="time">
+                                <img src="icons/time.png" id="time-img">
+                                <p>Ab 17:00 Uhr</p>
+                            </div>
+
+                            <div class="delivery">
+                                <img src="icons/car.png" id="car-img">
+                                <p>Lieferung kostenlos</p>
+                            </div>
+
+                            <div class="order">
+                                <img src="icons/basket.png" id="basket-img">
+                                <p>Mind. 10.00€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meal-slider">
+                        <img src="icons/search_black.png" id="search-icon">
+                        <a href="#" class="slider-a">Beliebte Gerichte</a>
+                        <a href="#" class="slider-a">Salate</a>
+                        <a href="#" class="slider-a">Pizza</a>
+                        <a href="#" class="slider-a">Pizzabrötchen</a>
+                        <a href="#" class="slider-a">Nudeln</a>
+                        <a href="#" class="slider-a">Schnitzel</a>
+                        <a href="#" class="slider-a">Burger</a>
+                        <img src="icons/arrow_black_right.png" id="arrow-black">
+                    </div>
+
+
+                    <div class="meal">
+                        <div class="meal-catergory">
+                            <h3>Beliebte Gerichte</h3>
+                        </div>
+
+                        <div class="meals">
+                            <div class="meal-details">
+                                <h4>Pizzabrötchen Schinken</h4>
+                                <p id="second-line">mit Käse und Schinken</p>
+                                <p id="third-line"><i>Wahl aus: mit Aioli Dip etc.</i></p>
+                                <p id="fourth-line"><b>4.50€</b></p>
+                            </div>
+                            <div class="plus">
+                                <img src="icons/plus_blue.png" id="plus-icon">
+                            </div>
+                        </div>
+                        <div class="meals">
+                            <div class="meal-details">
+                                <h4>Pizzabrötchen Schinken</h4>
+                                <p id="second-line">mit Käse und Schinken</p>
+                                <p id="third-line"><i>Wahl aus: mit Aioli Dip etc.</i></p>
+                                <p id="fourth-line"><b>4.50€</b></p>
+                            </div>
+                            <div class="plus">
+                                <img src="icons/plus_blue.png" id="plus-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <aside>
+                <div class="right-side">
+                    <div class="basket">
+
+                        <div class="basket-header">
+                            <h2>Warenkorb</h2>
+                        </div>
+
+                        <div class="basket-content">
+                            <div class="basket-amount">
+                                <div id="counter">
+                                    <p>1</p>
+                                </div>
+                                <div id="meal">
+                                    <p><b>Pizzabrötchen Schinken</b></p>
+                                    <p id="meal-info">mit Aioli Dip</p>
+                                </div>
+                                <div id="price">
+                                    <p>4.50€</p>
+                                </div>
+                            </div>
+                            <div class="basket-info">
+                                <a href="#">Anmerkung hinzufügen</a>
+                                <div class="count">
+                                    <button>-</button>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="min-amount">
+                                <p>Benötigter Betrag, um den Mindestbestellwert zu erreichen</p>
+                                <p>5.50€</p>
+                            </div>
+                            <div>
+                                <p>Leider kannst du noch nicht bestellen. XY Restaurant liefert erst ab einem
+                                    Mindestbestellwert von
+                                    10.00€ (exkl. Lieferkosten).</p>
+                            </div>
+                        </div>
+                        <div id="price-table">
+                            <table>
+                                <tr>
+                                    <td class="table-space">Zwischensumme</td>
+                                    <td>4.50€</td>
+                                </tr>
+                                <tr>
+                                    <td>Lieferkosten</td>
+                                    <td>kostenlos</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Gesamt</b></td>
+                                    <td><b>4.50€</b></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="pay">
+                            <button id="pay-button">Bezahlen</button>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+
+        </aside>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
